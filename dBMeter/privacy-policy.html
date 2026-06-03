@@ -15,13 +15,14 @@
     body { color: #e0ecf8; background: #0d1520; }
     a { color: #79b8ff; }
     h1, h2 { color: #ffffff; }
-    code { background: #1a2540; }
   }
   h1 { font-size: 1.7rem; margin-bottom: 4px; }
   h2 { font-size: 1.2rem; margin-top: 2em; }
   .meta { color: #6a90b0; font-size: 0.9rem; margin-bottom: 2em; }
   a { color: #1768d6; }
-  code { background: #eef0f4; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+  code { background: #eef0f4; color: #1a1c20; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+  /* dark override placed AFTER the base rule so it actually wins in dark mode */
+  @media (prefers-color-scheme: dark) { code { background: #1a2540; color: #cfe0f5; } }
   ul { padding-left: 1.3em; }
   footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ccc; color: #6a90b0; font-size: 0.85rem; }
 </style>
